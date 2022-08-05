@@ -507,6 +507,9 @@ li a {
   vertical-align: middle;
   display: inline-block;
 }
+/*--------------------------------*/
+
+/* Achievements Section */
 .achievements-wrapper {
   display: flex;
   justify-content: space-between;
@@ -579,7 +582,7 @@ li a {
 }
 /*--------------------------------*/
 
-/* Second banner section */
+/* Second Banner */
 .banner-2 {
   padding: 7% 5% 7%;
   background-color: #e47312;
@@ -609,7 +612,7 @@ li a {
 }
 /*--------------------------------*/
 
-/* Team Section*/
+/* Team Section */
 .team-card-container {
   display: flex;
 }
@@ -682,7 +685,7 @@ li a {
 }
 /*--------------------------------*/
 
-/*Testimonial Section*/
+/* Testimonial Section */
 .testimonial-wrapper {
   display: flex;
   align-items: center;
@@ -853,7 +856,7 @@ li a {
 }
 /*--------------------------------*/
 
-/*Footer*/
+/* Footer */
 .footer-wrapper {
   position: relative;
   margin-right: auto;
@@ -953,52 +956,21 @@ li a {
 /*--------------------------------*/
 
 @media (max-width: 1080px) {
+  /* Info Section */
   .info-wrapper {
     width: 100%;
   }
+  /*--------------------------------*/
 }
 
 @media (max-width: 991px) {
+  /* document */
   body {
     margin: 0;
   }
-  .navbar-container {
-    margin-top: 0;
-    width: 100%;
-    height: 60px;
-  }
-  .right-navbar-container {
-    display: none;
-  }
-  .brand {
-    height: 60px;
-  }
-  .banner-section {
-    width: 100%;
-  }
-  .banner-heading {
-    color: #fff;
-    font-size: 50px;
-    line-height: 60px;
-  }
-  .hamburger-menu {
-    display: flex;
-  }
-  .banner {
-    height: max(91vh, 520px);
-  }
-  .info-wrapper {
-    top: 0;
-  }
-  .social-wrapper {
-    right: 0;
-    top: calc(max(520px, 91vh) - 216px);
-  }
+  /*--------------------------------*/
 
-  .services-wrapper {
-    clear: both;
-    padding-top: min(192px, 15%);
-  }
+  /* common styles */
   .top-title-absolute {
     left: -32px;
     font-size: 80px;
@@ -1007,69 +979,123 @@ li a {
     font-size: 32px;
     line-height: 40px;
   }
-
   .about-wrapper,
   .work-wrapper {
     flex-direction: column;
   }
+  /*--------------------------------*/
 
+  /* Navigation Bar */
+  .navbar-container {
+    margin-top: 0;
+    width: 100%;
+    height: 60px;
+  }
+  .right-navbar-container {
+    display: none;
+  }
+  .hamburger-menu {
+    display: flex;
+  }
+  .brand {
+    height: 60px;
+  }
+  /*--------------------------------*/
+
+  /* Banner */
+  .banner-section {
+    width: 100%;
+  }
+  .banner-heading {
+    color: #fff;
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .banner {
+    height: max(91vh, 520px);
+  }
+  /*--------------------------------*/
+
+  /* Info Section */
+  .info-wrapper {
+    top: 0;
+  }
+  /*--------------------------------*/
+
+  /* Vertical Social Section */
+  .social-wrapper {
+    right: 0;
+    top: calc(max(520px, 91vh) - 216px);
+  }
+  /*--------------------------------*/
+
+  /* Services Section */
+  .services-wrapper {
+    clear: both;
+    padding-top: min(192px, 15%);
+  }
+  /*--------------------------------*/
+
+  /* About Section */
   .about-right-container {
     top: 64px;
     padding-left: 0;
   }
+  /*--------------------------------*/
+
+  /* Second Banner */
   .banner-heading-2 {
     font-size: 32px;
     line-height: 40px;
   }
+  /*--------------------------------*/
 
+  /* Team Section */
   .team-photo {
     min-height: 200px;
   }
+  /*--------------------------------*/
 
+  /* Testimonial Section */
   .testimonial-wrapper {
     flex-direction: column;
     padding-top: 96px;
     padding-bottom: 30px;
   }
-
   .testimonial-card-column:nth-child(2) {
     margin-top: 50px;
   }
+  /*--------------------------------*/
 
+  /* Companies Section */
   .companies-wrapper {
     padding-top: 5%;
     padding-bottom: 0;
   }
-
   .logo-flex {
     flex-wrap: wrap;
   }
-
   .companies-heading {
     text-align: center;
     flex-basis: 100%;
   }
+  /*--------------------------------*/
 
+  /* Footer */
   .footer-wrapper {
     width: 100%;
     padding-right: 5%;
     padding-left: 5%;
   }
-
   .brand-footer {
     height: 64px;
     bottom: 32px;
   }
+  /*--------------------------------*/
 }
 
 @media screen and (max-width: 767px) {
-  .banner-heading {
-    font-size: 40px;
-    line-height: 50px;
-  }
-  .info-wrapper {
-    padding: 30px 30px 5px 30px;
-  }
+  /* common styles */
   .top-title-absolute {
     font-size: 60px;
   }
@@ -1077,17 +1103,34 @@ li a {
     font-size: 26px;
     line-height: 30px;
   }
-
   .achievements-wrapper,
   .team-wrapper,
   .services-card-container,
   .work-card-row {
     flex-direction: column;
   }
+  /*--------------------------------*/
+
+  /* Banner */
+  .banner-heading {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  /*--------------------------------*/
+
+  /* Info Section */
+  .info-wrapper {
+    padding: 30px 30px 5px 30px;
+  }
+  /*--------------------------------*/
+
+  /* Achievemnts Section */
   .achievement-card {
     padding-right: 0;
   }
+  /*--------------------------------*/
 
+  /* Team Section */
   .team-card-wrapper {
     width: 100%;
     padding-top: 16px;
@@ -1099,25 +1142,27 @@ li a {
   .team-card-container {
     flex-direction: column;
   }
-
   .team-photo {
     min-height: 300px;
   }
+  /*--------------------------------*/
 
+  /* Testimonial Section */
   .testimonial-wrapper {
     padding-bottom: 10px;
   }
-
   .testimonial-card-container {
     flex-direction: column;
   }
-
   .testimonial-card-column {
     width: 100%;
   }
   .testimonial-card-column:nth-child(2) {
     margin-top: -61px;
   }
+  /*--------------------------------*/
+
+  /* Blog Section */
   .blog-wrapper {
     padding-top: 50px;
   }
@@ -1125,60 +1170,73 @@ li a {
     flex-direction: column;
     gap: 48px;
   }
+  /*--------------------------------*/
 
+  /* Companies Section */
   .companies-wrapper {
     padding-top: 10%;
   }
-
   .logo {
     width: 33.33%;
   }
+  /*--------------------------------*/
 
+  /* Footer */
   .footer-card-container {
     flex-direction: column;
     padding-bottom: 64px;
   }
-
   .footer-card {
     padding-right: 0;
     width: 100%;
   }
-
   .contact-card-container {
     padding-left: 20px;
   }
-
   .brand-footer {
     bottom: 0;
   }
+  /*--------------------------------*/
 }
 
 @media (max-width: 479px) {
-  .info-wrapper {
-    display: none;
-  }
-  .services-wrapper {
-    padding-top: 15%;
-  }
-  .title-heading-container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+  /* common styles*/
   .top-title-absolute {
     display: none;
   }
   .top-title {
     margin-bottom: 9px;
   }
+  .title-heading-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  /*--------------------------------*/
+
+  /* Info Section */
+  .info-wrapper {
+    display: none;
+  }
+  /*--------------------------------*/
+
+  /* Services Section */
+  .services-wrapper {
+    padding-top: 15%;
+  }
+  /*--------------------------------*/
+
+  /* Second Banner */
   .banner-section-2 {
     align-items: flex-start;
   }
+  /*--------------------------------*/
 
+  /* Companies Section */
   .companies-wrapper {
     padding-top: 15%;
   }
-
   .logo {
     width: 100%;
   }
+  /*--------------------------------*/
 }
